@@ -16,10 +16,6 @@ body,
   margin-inline-end: 0px;
   padding-inline-start: 0px;
   padding-inline-end: 0px;
-}
-
-body,
-* {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -27,6 +23,10 @@ body,
   line-height: 15px;
 
   color: #2e2e2e;
+}
+
+a {
+  text-decoration: none;
 }
 
 .bold-text {
@@ -607,12 +607,12 @@ li.project-item {
 .project--title::before {
   content: counters(section, ".") " ";
 
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
-  color: #2E2E2E;
+  color: #2e2e2e;
 }
 
 .project--description {
