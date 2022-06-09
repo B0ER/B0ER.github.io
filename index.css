@@ -16,6 +16,7 @@ body,
   margin-inline-end: 0px;
   padding-inline-start: 0px;
   padding-inline-end: 0px;
+
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -530,11 +531,11 @@ ul.language-list-item {
 }
 
 .backend-skills-item {
+  height: 100%;
   font-size: 14px;
   line-height: 17px;
   color: #808080;
 }
-
 
 /* ADDITIONAL SKILLS */
 
@@ -564,6 +565,7 @@ ul.language-list-item {
 }
 
 .additional-skills-item {
+  height: 100%;
   font-size: 14px;
   line-height: 17px;
   color: #808080;
@@ -611,6 +613,7 @@ li.project-item {
 }
 
 .project--title {
+  height: 100%;
 }
 
 .project--title::before {
@@ -626,7 +629,6 @@ li.project-item {
 
 .project--description {
   margin-top: 14px;
-  width: 300px;
 }
 
 .project--position-container {
@@ -704,6 +706,7 @@ ul.size-team--line {
 }
 
 .tech-stack-item {
+  height: 100%;
   font-size: 14px;
   line-height: 17px;
   color: #808080;
