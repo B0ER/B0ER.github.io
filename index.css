@@ -43,7 +43,6 @@ a {
 
 .list > .list-item {
   position: relative;
-  display: block;
   margin-left: 16px;
   padding-left: 3px;
 }
@@ -296,7 +295,9 @@ ul.language-list-item {
   text-transform: uppercase;
   color: #2e2e2e;
 
-  margin-left: 520px;
+  width: 400px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .work-experience {
@@ -507,6 +508,7 @@ ul.language-list-item {
 
 .backend-category-item {
   margin-top: 14px;
+  width: 100%;
 }
 
 .backend-category-item--title {
@@ -522,14 +524,17 @@ ul.language-list-item {
 .backend-skills {
   margin-top: 24px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   grid-row-gap: 10px;
   grid-column-gap: 1em;
 }
 
-.backend-category--dotnet {
-  margin-left: 130px;
+.backend-skills-item {
+  font-size: 14px;
+  line-height: 17px;
+  color: #808080;
 }
+
 
 /* ADDITIONAL SKILLS */
 
@@ -558,6 +563,12 @@ ul.language-list-item {
   grid-column-gap: 1em;
 }
 
+.additional-skills-item {
+  font-size: 14px;
+  line-height: 17px;
+  color: #808080;
+}
+
 /* PROJECTS */
 .project-container {
   margin-top: 80px;
@@ -579,8 +590,6 @@ ul.language-list-item {
 .project {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  height: 320px;
   max-width: 1490px;
 }
 
@@ -616,7 +625,12 @@ li.project-item {
 }
 
 .project--description {
+  margin-top: 14px;
   width: 300px;
+}
+
+.project--position-container {
+  margin-top: 14px;
 }
 
 .project--position {
